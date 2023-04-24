@@ -1,0 +1,25 @@
+{
+    "name": "dora38/laravel-sql-log",
+    "description": "SQL trace log feature for Laravel",
+    "type": "library",
+    "require": {
+        "php": ">=8.1",
+        "barryvdh/laravel-debugbar": "^3|^4|^5",
+        "illuminate/support": "^9|^10|^11|^12",
+        "illuminate/events": "^9|^10|^11|^12",
+        "illuminate/log": "^9|^10|^11|^12"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dora38\\SqlLog\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dora38\\SqlLog\\ServiceProvider"
+            ]
+        }
+    }
+}
